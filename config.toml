@@ -1,4 +1,4 @@
-title = "Sathish Kumar Thiyagarajan"
+title = "Kishore"
 baseURL = "https://example.com/"
 theme = "my-resume"
 languageCode = "en-us"
@@ -10,9 +10,9 @@ enableGitInfo = false
 [params]
 address = "Coimbatore, India"
 favicon = "/favicon.ico"
-firstName = "Sathish Kumar"
-lastName = "Thiyagarajan"
-phone = "1-555-555-1234"
+firstName = "Kishore"
+lastName = "G"
+phone = "+91 9025084568"
 showSocializations = true
 showContact = false
 sections = ["skills","publications","creations","contributions","experience","education","blog"]
@@ -28,7 +28,7 @@ link = "https://www.linkedin.com/in/sathishkumarthiyagarajan/"
 name = "LinkedIn"
 
 [[params.handles]]
-link = "https://github.com/sathishk/"
+link = "https://github.com/Mr-kishore/"
 name = "GitHub"
 
 [outputs]

@@ -2,7 +2,7 @@
   {
     "grouping":"Cyber Security Researching",
     "skills":[ "IP Networking","DNS","Firewalls","Load Balancing","Microservices","RESTful APIs","SaaS/PaaS/IaaS"]
-  },
+},
   {
       "grouping":"DataBase Management",
       "skills":[
@@ -19,10 +19,16 @@
         {"name":".Net and c#"},
         {"name":"Java"},
         {"name":"Python"},
+        {"name":"php"},
+        {"name":"Flutter"},
         {"name":"git"},
-    ]
-  },
-  {
+        {"name":"linux"},
+        {"name":"bash"},
+        {"name":"Joget"},
+        {"name":"Markdown"},
+        {"name":"Katex"}]
+},
+{
   "grouping":"UI/UX",
   "skills":[
     {"name":"HTML 5"},
@@ -31,9 +37,9 @@
     {"name":"Dart"},
     {"name":"Figma"},
     {"name":"Illustrator"}
-    ]
-  },
-  {
+  ]
+},
+{
   "grouping":"Methodology",
   "skills":[
     {"name":"Agile"},
@@ -45,4 +51,5 @@
   "grouping":"GitOps",
   "skills":["Git"]
 }
+
 ]

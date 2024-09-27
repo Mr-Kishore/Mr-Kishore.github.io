@@ -1,6 +1,49 @@
 [
   {
-      "grouping":"Languages, Operating Systems & Tools",
-      "skills":[ "Python","git"]
-  }
+    "grouping":"Cyber Security Researching",
+    "skills":[ "IP Networking","DNS","Firewalls","Load Balancing","Microservices","RESTful APIs","SaaS/PaaS/IaaS"]
+},
+  {
+      "grouping":"DataBase Management",
+      "skills":[
+        {"name":"Microsoft SQL Server","icon":"msql_server"},
+        {"name":"My SQL","icon":"database"},
+        {"name": "PostgreSQL"}
+      ]
+  },
+  {
+    "grouping":"Languages, Operating Systems & Tools",
+    "skills":[  
+        {"name":"C"},
+        {"name":"C++"},
+        {"name":".Net and c#"},
+        {"name":"Java"},
+        {"name":"Python"},
+        {"name":"git"},
+                      ]
+},
+{
+  "grouping":"UI/UX",
+  "skills":[
+    {"name":"HTML 5"},
+    {"name":"CSS 3"},
+    {"name":"Bootstrap"},
+    {"name":"Dart"},
+    {"name":"Figma"},
+    {"name":"Illustrator"}
+  ]
+},
+{
+  "grouping":"Methodology",
+  "skills":[
+    {"name":"Agile"},
+    {"name":"Waterfall"},
+    {"name":"Kanban"}
+  ]
+},
+{
+  "grouping":"GitOps",
+  "skills":["Git"]
+}
+
 ]

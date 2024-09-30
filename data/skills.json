@@ -1,9 +1,5 @@
 [
   {
-    "grouping":"Cyber Security Researching",
-    "skills":[ "IP Networking","DNS","Firewalls","Load Balancing","Microservices","RESTful APIs","SaaS/PaaS/IaaS"]
-},
-  {
       "grouping":"DataBase Management",
       "skills":[
         {"name":"Microsoft SQL Server","icon":"msql_server"},
@@ -19,14 +15,9 @@
         {"name":".Net and c#"},
         {"name":"Java"},
         {"name":"Python"},
-        {"name":"php"},
-        {"name":"Flutter"},
         {"name":"git"},
-        {"name":"linux"},
-        {"name":"bash"},
-        {"name":"Joget"},
-        {"name":"Markdown"},
-        {"name":"Katex"}]
+        {"name":"linux"}
+        ]
 },
 {
   "grouping":"UI/UX",
@@ -34,9 +25,7 @@
     {"name":"HTML 5"},
     {"name":"CSS 3"},
     {"name":"Bootstrap"},
-    {"name":"Dart"},
-    {"name":"Figma"},
-    {"name":"Illustrator"}
+    {"name":"JavaScript"}
   ]
 },
 {

@@ -1,0 +1,92 @@
+<section class="resume-section p-3 p-lg-5 d-flex d-column" id="about">
+  <div class="my-auto">
+    <div class="resume-item d-flex flex-column flex-md-row">
+      <div class="mr-auto">
+        <!-- Modern gradient heading with typing animation -->
+        <h1 class="mb-0 modern-heading">
+          {{ .Site.Params.firstName }}
+          <span class="text-primary">{{ .Site.Params.lastName }}</span>
+        </h1>
+        
+        <!-- Enhanced subheading with modern styling -->
+        <div class="subheading mb-5 modern-subheading">
+          <a href="mailto:{{ substr .Site.Params.profileTitle 0 5}}-remove-{{ substr .Site.Params.profileTitle 5 }}" class="email-link">
+            {{ substr .Site.Params.profileTitle 0 5}}<span style="display:none">-remove-</span>{{ substr .Site.Params.profileTitle 5 }}
+          </a>
+          <span class="separator">•</span>
+          <span class="location">{{ .Site.Params.address }}</span>
+        </div>
+
+        <!-- Modern status indicator -->
+        <div class="status-indicator mb-4">
+          <span class="status-dot"></span>
+          <span class="status-text">Intern at Ventragate</span>
+        </div>
+
+      </div>
+
+      {{ if .Site.Params.showQr }}
+      {{ partial "contact-qr" . }}
+      {{ end }}
+
+    </div>
+    
+    <!-- Enhanced content section -->
+    <div class="content-section">
+      {{ .Content }}
+      
+      <!-- Modern certifications section -->
+      {{ if .Site.Params.showCertifications }}
+      <div class="certifications-section mt-5">
+        <h3 class="section-title">
+          <i class="fas fa-certificate mr-2"></i>
+          {{ i18n "certifications" }}
+        </h3>
+        <div class="certifications-grid">
+          {{ range .Data.certifications }}
+          <div class="certification-card">
+            <a href="{{ .proof }}" data-toggle="tooltip" title="{{ .name }}" data-offset="0 10" rel="me" class="certification-link">
+              <img src="{{ .badge }}" alt="{{ .name }}" class="certification-badge" />
+            </a>
+          </div>
+          {{ end }}
+        </div>
+      </div>
+      {{ end }}
+      
+      <!-- Modern social links section -->
+      {{ if .Site.Params.showSocializations }}
+      <div class="social-section mt-5">
+        <h3 class="section-title">
+          <i class="fas fa-share-alt mr-2"></i>
+          {{ i18n "socialization" }}
+        </h3>
+        <div class="social-grid">
+          {{ range .Site.Params.handles }}
+          <div class="social-item">
+            <a href="{{ .link }}" data-toggle="tooltip" title="{{ .name }}" data-offset="0,10" rel="me" class="social-link">
+              <div class="social-icon-wrapper">
+                <i class="fab {{ if .icon}}fa-{{ .icon }}{{ else }}fa-{{ replace (lower .name) " " " -" }}{{ end }}"></i>
+              </div>
+              <span class="social-name">{{ .name }}</span>
+            </a>
+          </div>
+          {{ end }}
+        </div>
+      </div>
+      {{ end }}
+    </div>
+    
+    <!-- Enhanced GitHub contributions chart -->
+    <div class="github-section mt-5">
+      <h3 class="section-title">
+        <i class="fab fa-github mr-2"></i>
+        GitHub Activity
+      </h3>
+      <div class="github-chart-container">
+        <img src="http://ghchart.rshah.org/{{ range where .Site.Params.handles "name" "GitHub" }}{{ replace (index (split .link "github.com/") 1) "/" ""}}{{ end }}" 
+             class="github-chart" alt="Github Contributions" />
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,45 @@
+<!-- Modern Footer -->
+<footer class="modern-footer">
+  <div class="footer-content">
+    <div class="footer-section">
+      <div class="footer-brand">
+        <h4>{{ .Site.Params.firstName }} {{ .Site.Params.lastName }}</h4>
+        <p class="footer-tagline">Building the future, one line of code at a time</p>
+      </div>
+    </div>
+    
+    <div class="footer-section">
+      <h5>Quick Links</h5>
+      <ul class="footer-links">
+        <li><a href="#about">About</a></li>
+        {{ range .Site.Params.sections }}
+        <li><a href="/#{{.}}">{{ . | title }}</a></li>
+        {{ end }}
+      </ul>
+    </div>
+    
+    <div class="footer-section">
+      <h5>Connect</h5>
+      <div class="footer-social">
+        {{ range .Site.Params.handles }}
+        <a href="{{ .link }}" title="{{ .name }}" class="footer-social-link">
+          <i class="fab {{ if .icon}}fa-{{ .icon }}{{ else }}fa-{{ replace (lower .name) " " " -" }}{{ end }}"></i>
+        </a>
+        {{ end }}
+      </div>
+    </div>
+  </div>
+  
+  <div class="footer-bottom">
+    <div class="footer-info">
+      <p>&copy; {{ now.Year }} {{ .Site.Params.firstName }} {{ .Site.Params.lastName }}. All rights reserved.</p>
+      <p class="footer-location">{{ .Site.Params.address }}</p>
+    </div>
+    
+    <div class="footer-tech">
+      <span class="tech-badge">Built with Hugo</span>
+      <span class="tech-badge">Modern Design</span>
+      <span class="tech-badge">Dark Mode</span>
+    </div>
+  </div>
+</footer> 

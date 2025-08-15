@@ -1,6 +1,5 @@
 title = "Kishore"
 baseURL = "https://example.com/"
-theme = "my-resume"
 languageCode = "en-us"
 PygmentsCodeFences = true
 PygmentsCodeFencesGuessSyntax = true
@@ -15,6 +14,7 @@ lastName = ""
 phone = "+91 9025084568"
 showSocializations = true
 showContact = false
+showCertifications = true
 sections = ["skills","education", "experience","contributions","creations","blog"]
 
 

@@ -270,6 +270,75 @@ h3 {
   font-size: 1rem;
 }
 
+/* Download Resume Button */
+.modern-download-btn {
+  background: rgba(255, 255, 255, 0.15);
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  color: rgba(255, 255, 255, 0.95);
+  border-radius: var(--radius-lg);
+  padding: var(--spacing-sm) var(--spacing-md);
+  transition: all var(--transition-fast);
+  backdrop-filter: blur(10px);
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-xs);
+  font-weight: 600;
+  font-size: 0.9rem;
+  cursor: pointer;
+  min-width: 120px;
+  margin-left: var(--spacing-md);
+}
+
+.modern-download-btn:hover {
+  background: rgba(255, 255, 255, 0.25);
+  border-color: rgba(255, 255, 255, 0.5);
+  color: #ffffff;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px var(--shadow-medium);
+}
+
+.modern-download-btn:active {
+  transform: translateY(0);
+}
+
+.modern-download-btn .download-text {
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+@media (max-width: 768px) {
+  .modern-download-btn {
+    min-width: auto;
+    padding: var(--spacing-sm);
+  }
+  
+  .modern-download-btn .download-text {
+    display: none;
+  }
+}
+
+/* Notification Styles */
+.notification {
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+}
+
+.notification-content {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-sm);
+}
+
+.notification-content i {
+  font-size: 1.1rem;
+}
+
+.notification-content span {
+  font-size: 0.9rem;
+}
+
 /* Sections */
 section.resume-section {
   border-bottom: 1px solid var(--border-color);

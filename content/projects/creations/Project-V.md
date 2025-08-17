@@ -1,15 +1,13 @@
-{
-  "title": "Voice Assisted Student Data Management",
-  "date": "2018-02-11T12:41:05-05:00",
-  "image": "/img/pfp.jpg",
-  "link": "https://github.com/Mr-Kishore/Project_V",
-  "image": "/img/pfp.jpg",
-  "description": "A simple ML based program used to access, modify and delete data in a database either using keyboard commands or using Push-to-talk feature",
-  "tags": ["Python Programming","User Application", "File Handling", "Machine Lerning", "Advanced Python Concepts", "Real-world Application"],
-  "fact": "",
-  "featured":true
-
-}
+---
+title: "Voice Assisted Student Data Management"
+date: 2018-02-11T12:41:05-05:00
+type: "creations"
+image: "/img/pfp.jpg"
+github: "https://github.com/Mr-Kishore/Project_V"
+description: "A simple ML based program used to access, modify and delete data in a database either using keyboard commands or using Push-to-talk feature"
+tags: ["Python Programming","User Application", "File Handling", "Machine Learning", "Advanced Python Concepts", "Real-world Application"]
+featured: true
+---
 
 ## Overview
 A **Student Detail Management System** is a Python-based console application that simplifies managing student, staff, academic, and transport records through **voice commands**. It utilizes **speech recognition** and **text-to-speech (TTS)** to minimize manual input, making it an intuitive and user-friendly system.

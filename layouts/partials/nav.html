@@ -11,26 +11,29 @@
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav">
       <li class="nav-item">
-        <a class="nav-link js-scroll-trigger" href="{{ "#about" | relURL }}">{{ i18n "about" }}</a>
+        <a class="nav-link js-scroll-trigger" href="#about">ABOUT</a>
       </li>
-      {{ range .Site.Params.sections }}
       <li class="nav-item">
-        <a class="nav-link js-scroll-trigger" href="/#{{.}}">{{ . | i18n }}</a>
+        <a class="nav-link js-scroll-trigger" href="#skills">SKILLS</a>
       </li>
-      {{ end }}
-      {{ if .Site.Params.showContact}}
-          <li class="nav-item">
-            <a class="nav-link" href="/contact">{{ i18n "contact" }}</a>
-          </li>
-      {{ end }}
+      <li class="nav-item">
+        <a class="nav-link js-scroll-trigger" href="#education">EDUCATION</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link js-scroll-trigger" href="#experience">EXPERIENCE</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link js-scroll-trigger" href="#creations">CREATIONS</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link js-scroll-trigger" href="#contributions">OPEN SOURCE</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link js-scroll-trigger" href="#publications">PRESENTATIONS</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link js-scroll-trigger" href="#blog">BLOG</a>
+      </li>
     </ul>
-    
-    <!-- Download Resume Button -->
-    <div class="ml-auto">
-      <button id="downloadResumeBtn" class="btn btn-outline-light btn-sm modern-download-btn" aria-label="Download ATS Resume">
-        <i class="fas fa-download mr-2"></i>
-        <span class="download-text">Download Resume</span>
-      </button>
-    </div>
   </div>
 </nav>

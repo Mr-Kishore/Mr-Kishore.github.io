@@ -1,0 +1,39 @@
+<section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="education">
+  <div class="w-100">
+    <h2 class="mb-5">Education</h2>
+
+    {{ range .Site.Data.education }}
+    <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
+      <div class="resume-content">
+        <h3 class="mb-0">{{ .degree }}</h3>
+        <div class="subheading mb-3">{{ .university }}</div>
+        {{ if .gpa }}
+        <div>GPA: {{ .gpa }}</div>
+        {{ end }}
+        {{ if .description }}
+        <p>{{ .description }}</p>
+        {{ end }}
+      </div>
+      <div class="resume-date text-md-right">
+        <span class="text-primary">{{ .dates }}</span>
+      </div>
+    </div>
+    {{ end }}
+
+    <!-- Compact certifications section -->
+    {{ if .Site.Params.showCertifications }}
+    <div class="certifications-section mt-4">
+      <h4 class="mb-3">Certifications</h4>
+      <div class="certifications-compact d-flex flex-wrap">
+        {{ range .Site.Data.certifications }}
+        <div class="certification-item mr-3 mb-2">
+          <a href="{{ .proof }}" data-toggle="tooltip" title="{{ .name }}" target="_blank" class="certification-link-compact">
+            <img src="{{ .badge }}" alt="{{ .name }}" class="certification-badge-small" style="height: 60px; width: auto;" />
+          </a>
+        </div>
+        {{ end }}
+      </div>
+    </div>
+    {{ end }}
+  </div>
+</section>

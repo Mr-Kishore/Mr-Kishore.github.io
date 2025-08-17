@@ -1,0 +1,48 @@
+<section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="skills">
+  <div class="w-100">
+    <h2 class="mb-5">Skills</h2>
+
+    <div class="subheading mb-3">Programming Languages &amp; Tools</div>
+    <ul class="list-inline dev-icons">
+      {{ range .Site.Data.skills.languages }}
+      <li class="list-inline-item">
+        <i class="{{ .class }}" data-toggle="tooltip" title="{{ .name }}"></i>
+      </li>
+      {{ end }}
+    </ul>
+
+    {{ if .Site.Data.skills.frameworks }}
+    <div class="subheading mb-3">Frameworks &amp; Libraries</div>
+    <ul class="list-inline dev-icons">
+      {{ range .Site.Data.skills.frameworks }}
+      <li class="list-inline-item">
+        <i class="{{ .class }}" data-toggle="tooltip" title="{{ .name }}"></i>
+      </li>
+      {{ end }}
+    </ul>
+    {{ end }}
+
+    {{ if .Site.Data.skills.tools }}
+    <div class="subheading mb-3">Tools &amp; Technologies</div>
+    <ul class="list-inline dev-icons">
+      {{ range .Site.Data.skills.tools }}
+      <li class="list-inline-item">
+        <i class="{{ .class }}" data-toggle="tooltip" title="{{ .name }}"></i>
+      </li>
+      {{ end }}
+    </ul>
+    {{ end }}
+
+    {{ if .Site.Data.skills.workflow }}
+    <div class="subheading mb-3">Workflow</div>
+    <ul class="fa-ul mb-0">
+      {{ range .Site.Data.skills.workflow }}
+      <li>
+        <i class="fa-li fa fa-check"></i>
+        {{ . }}
+      </li>
+      {{ end }}
+    </ul>
+    {{ end }}
+  </div>
+</section>

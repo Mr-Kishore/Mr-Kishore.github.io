@@ -1,3 +1,6 @@
 {{ define "main" }}
   {{ partial "about.html" . }}
-{{ end }} 
+  {{ range .Site.Params.sections }}
+    {{ partial (printf "%s.html" .) $ }}
+  {{ end }}
+{{ end }}

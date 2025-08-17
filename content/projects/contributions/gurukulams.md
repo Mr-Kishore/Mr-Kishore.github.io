@@ -1,6 +1,7 @@
 ---
 title: "Gurukulams"
-link: "https://github.com/gurukulams/gurukulam"
+type: "contributions"
+github: "https://github.com/gurukulams/gurukulam"
 image: "/img/gurukulams-logo.png"
 description: "Initiative work done for students by transforming traditional physical books to E-books"
 featured: true

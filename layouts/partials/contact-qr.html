@@ -1,0 +1,59 @@
+<div class="sidebar-section">
+  <!-- Contact Information -->
+  <div class="contact-info mb-4">
+    <h4 class="sidebar-title">Contact</h4>
+    <div class="contact-item">
+      <i class="fas fa-envelope"></i>
+      <span>{{ substr .Site.Params.profileTitle 0 5}}<span style="display:none">-remove-</span>{{ substr .Site.Params.profileTitle 5 }}</span>
+    </div>
+    <div class="contact-item">
+      <i class="fas fa-phone"></i>
+      <span>{{ .Site.Params.phone }}</span>
+    </div>
+    <div class="contact-item">
+      <i class="fas fa-map-marker-alt"></i>
+      <span>{{ .Site.Params.address }}</span>
+    </div>
+  </div>
+
+  <!-- Key Skills Summary -->
+  <div class="skills-summary mb-4">
+    <h4 class="sidebar-title">Key Skills</h4>
+    <div class="skill-tags">
+      <span class="skill-tag">Python</span>
+      <span class="skill-tag">Machine Learning</span>
+      <span class="skill-tag">Java</span>
+      <span class="skill-tag">JavaScript</span>
+      <span class="skill-tag">AWS</span>
+      <span class="skill-tag">Git</span>
+    </div>
+  </div>
+
+  <!-- Languages -->
+  <div class="languages mb-4">
+    <h4 class="sidebar-title">Languages</h4>
+    <div class="language-item">
+      <span class="language-name">English</span>
+      <div class="language-level">
+        <div class="level-bar" style="width: 90%"></div>
+      </div>
+    </div>
+    <div class="language-item">
+      <span class="language-name">Tamil</span>
+      <div class="language-level">
+        <div class="level-bar" style="width: 100%"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Interests -->
+  <div class="interests">
+    <h4 class="sidebar-title">Interests</h4>
+    <div class="interest-tags">
+      <span class="interest-tag"><i class="fas fa-laptop-code"></i> Coding</span>
+      <span class="interest-tag"><i class="fas fa-desktop"></i> PC Building</span>
+      <span class="interest-tag"><i class="fas fa-brain"></i> AI/ML</span>
+      <span class="interest-tag"><i class="fas fa-network-wired"></i> Networking</span>
+    </div>
+  </div>
+</div>

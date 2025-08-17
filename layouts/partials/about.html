@@ -23,6 +23,14 @@
           <span class="status-text">Intern at Ventragate</span>
         </div>
 
+        <!-- Download Resume Button -->
+        <div class="download-section mb-4">
+          <a href="/resume.pdf" class="btn btn-primary btn-lg download-btn" download>
+            <i class="fas fa-download mr-2"></i>
+            Download Resume
+          </a>
+        </div>
+
       </div>
 
       {{ if .Site.Params.showQr }}
@@ -35,24 +43,6 @@
     <div class="content-section">
       {{ .Content }}
       
-      <!-- Modern certifications section -->
-      {{ if .Site.Params.showCertifications }}
-      <div class="certifications-section mt-5">
-        <h3 class="section-title">
-          <i class="fas fa-certificate mr-2"></i>
-          Certifications
-        </h3>
-        <div class="certifications-grid">
-          {{ range .Site.Data.certifications }}
-          <div class="certification-card">
-            <a href="{{ .proof }}" data-toggle="tooltip" title="{{ .name }}" data-offset="0 10" rel="me" class="certification-link">
-              <img src="{{ .badge }}" alt="{{ .name }}" class="certification-badge" />
-            </a>
-          </div>
-          {{ end }}
-        </div>
-      </div>
-      {{ end }}
       
       <!-- Modern social links section -->
       {{ if .Site.Params.showSocializations }}

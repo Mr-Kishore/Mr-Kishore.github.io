@@ -1,40 +1,34 @@
-[
-  {
-      "grouping":"Architecture",
-      "skills":[
-        {"name" : "PC buildings"},
-        {"name" : "Networking"},
-        {"name" : "troubleshooting"}
-      ]
-  },
-  {
-      "grouping":"Languages, Operating Systems & Tools",
-      "skills":[
-        {"name" : "Python"},
-        {"name" : "Java"},
-        {"name" : "git"},
-        {"name" : "HTML"},
-        {"name" : "javascript"},
-        {"name" : "Linux"}, 
-        {"name" : "C"}, 
-        {"name" : "C++"}, 
-        {"name" : "C#"}
-      ]
-  },
-  {
-      "grouping":"Platform Development & Administration",
-      "skills":[{ "name" : "MySQL"}]
-  },
-  {
-      "grouping":"Data Management",
-      "skills":[
-        {"name":"Microsoft SQL Server","icon":"msql_server"}
-      ]
-  },
-  {
-    "grouping":"Containers & Cloud",
-      "skills":[
-          {"name":"AWS","link":"https://aws.amazon.com"}
-      ]
-  }
-]
+{
+  "languages": [
+    {"name": "Python", "class": "devicons devicons-python"},
+    {"name": "Java", "class": "devicons devicons-java"},
+    {"name": "JavaScript", "class": "devicons devicons-javascript"},
+    {"name": "HTML5", "class": "devicons devicons-html5"},
+    {"name": "C", "class": "devicons devicons-c"},
+    {"name": "C++", "class": "devicons devicons-cplusplus"},
+    {"name": "C#", "class": "devicons devicons-dotnet"}
+  ],
+  "frameworks": [
+    {"name": "TensorFlow", "class": "devicons devicons-tensorflow"},
+    {"name": "PyTorch", "class": "devicons devicons-pytorch"},
+    {"name": "Flask", "class": "devicons devicons-flask"},
+    {"name": "Django", "class": "devicons devicons-django"}
+  ],
+  "tools": [
+    {"name": "Git", "class": "devicons devicons-git"},
+    {"name": "Linux", "class": "devicons devicons-linux"},
+    {"name": "Docker", "class": "devicons devicons-docker"},
+    {"name": "Jupyter", "class": "devicons devicons-jupyter"},
+    {"name": "VS Code", "class": "devicons devicons-vscode"},
+    {"name": "MySQL", "class": "devicons devicons-mysql"},
+    {"name": "AWS", "class": "devicons devicons-aws"}
+  ],
+  "workflow": [
+    "Machine Learning Model Development",
+    "PC Hardware Assembly & Troubleshooting",
+    "Network Configuration & Management",
+    "DevOps & CI/CD Pipelines",
+    "Cross Functional Teams",
+    "Agile Development & Scrum"
+  ]
+}

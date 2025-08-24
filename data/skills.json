@@ -4,24 +4,24 @@
     {"name": "Java", "class": "devicons devicons-java"},
     {"name": "JavaScript", "class": "devicons devicons-javascript"},
     {"name": "HTML5", "class": "devicons devicons-html5"},
-    {"name": "C", "class": "devicons devicons-c"},
-    {"name": "C++", "class": "devicons devicons-cplusplus"},
-    {"name": "C#", "class": "devicons devicons-dotnet"}
+    {"name": "CSS3", "class": "devicons devicons-css3"},
+    {"name": "C#", "class": "devicons devicons-dotnet"},
+    {"name": "POSTGRES", "class": "devicons devicons-postgresql"}
   ],
   "frameworks": [
-    {"name": "TensorFlow", "class": "devicons devicons-tensorflow"},
-    {"name": "PyTorch", "class": "devicons devicons-pytorch"},
-    {"name": "Flask", "class": "devicons devicons-flask"},
-    {"name": "Django", "class": "devicons devicons-django"}
+    {"name": "Django", "class": "fab fa-python"},
+    {"name": "Flask", "class": "fas fa-vial"},
+    {"name": "TensorFlow", "class": "fas fa-brain"},
+    {"name": "PyTorch", "class": "fas fa-fire"}
   ],
   "tools": [
     {"name": "Git", "class": "devicons devicons-git"},
     {"name": "Linux", "class": "devicons devicons-linux"},
     {"name": "Docker", "class": "devicons devicons-docker"},
-    {"name": "Jupyter", "class": "devicons devicons-jupyter"},
-    {"name": "VS Code", "class": "devicons devicons-vscode"},
+    {"name": "Jupyter", "class": "fas fa-book"},
+    {"name": "VS Code", "class": "fas fa-code"},
     {"name": "MySQL", "class": "devicons devicons-mysql"},
-    {"name": "AWS", "class": "devicons devicons-aws"}
+    {"name": "AWS", "class": "fab fa-aws"}
   ],
   "workflow": [
     "Machine Learning Model Development",

@@ -12,11 +12,10 @@ favicon = "/favicon.ico"
 firstName = "Kishore"
 lastName = ""
 phone = "+91 9025084568"
-profileTitle = "kishore@example.com"
+profileTitle = "PC builder with software knowledge"
 showSocializations = true
 showContact = false
 showQr = true
-showCertifications = true
 sections = ["skills","education","experience","creations","contributions","publications","blog"]
 
 

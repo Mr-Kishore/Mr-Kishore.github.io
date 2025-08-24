@@ -6,7 +6,11 @@
     <ul class="list-inline dev-icons">
       {{ range .Site.Data.skills.languages }}
       <li class="list-inline-item">
-        <i class="{{ .class }}" data-toggle="tooltip" title="{{ .name }}"></i>
+        {{ if hasPrefix .class "devicons" }}
+          <i class="{{ .class }}" data-toggle="tooltip" title="{{ .name }}"></i>
+        {{ else }}
+          <i class="{{ .class }}" data-toggle="tooltip" title="{{ .name }}"></i>
+        {{ end }}
       </li>
       {{ end }}
     </ul>
@@ -16,7 +20,11 @@
     <ul class="list-inline dev-icons">
       {{ range .Site.Data.skills.frameworks }}
       <li class="list-inline-item">
-        <i class="{{ .class }}" data-toggle="tooltip" title="{{ .name }}"></i>
+        {{ if hasPrefix .class "devicons" }}
+          <i class="{{ .class }}" data-toggle="tooltip" title="{{ .name }}"></i>
+        {{ else }}
+          <i class="{{ .class }}" data-toggle="tooltip" title="{{ .name }}"></i>
+        {{ end }}
       </li>
       {{ end }}
     </ul>
@@ -27,7 +35,11 @@
     <ul class="list-inline dev-icons">
       {{ range .Site.Data.skills.tools }}
       <li class="list-inline-item">
-        <i class="{{ .class }}" data-toggle="tooltip" title="{{ .name }}"></i>
+        {{ if hasPrefix .class "devicons" }}
+          <i class="{{ .class }}" data-toggle="tooltip" title="{{ .name }}"></i>
+        {{ else }}
+          <i class="{{ .class }}" data-toggle="tooltip" title="{{ .name }}"></i>
+        {{ end }}
       </li>
       {{ end }}
     </ul>

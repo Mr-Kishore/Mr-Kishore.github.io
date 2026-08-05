@@ -11,14 +11,15 @@ const Loading = ({ percent }: { percent: number }) => {
   const [isLoaded, setIsLoaded] = useState(false);
   const [clicked, setClicked] = useState(false);
 
-  if (percent >= 100) {
-    setTimeout(() => {
+  useEffect(() => {
+    if (percent >= 100 && !loaded) {
       setLoaded(true);
-      setTimeout(() => {
+      const timer = setTimeout(() => {
         setIsLoaded(true);
-      }, 1000);
-    }, 600);
-  }
+      }, 400);
+      return () => clearTimeout(timer);
+    }
+  }, [percent, loaded]);
 
   useEffect(() => {
     import("./utils/initialFX").then((module) => {
@@ -29,10 +30,15 @@ const Loading = ({ percent }: { percent: number }) => {
             module.initialFX();
           }
           setIsLoading(false);
-        }, 900);
+        }, 500);
       }
     });
-  }, [isLoaded]);
+  }, [isLoaded, setIsLoading]);
+
+  const handleForceEnter = () => {
+    setLoaded(true);
+    setIsLoaded(true);
+  };
 
   function handleMouseMove(e: React.MouseEvent<HTMLElement>) {
     const { currentTarget: target } = e;
@@ -62,7 +68,7 @@ const Loading = ({ percent }: { percent: number }) => {
           </div>
         </div>
       </div>
-      <div className="loading-screen">
+      <div className="loading-screen" onClick={handleForceEnter}>
         <div className="loading-marquee">
           <Marquee>
             <span>&nbsp; {config.developer.title} &nbsp;</span>

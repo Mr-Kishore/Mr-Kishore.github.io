@@ -8,16 +8,18 @@ const setCharacter = (
   scene: THREE.Scene,
   camera: THREE.PerspectiveCamera
 ) => {
+  const baseUrl = import.meta.env.BASE_URL || "/";
   const loader = new GLTFLoader();
   const dracoLoader = new DRACOLoader();
-  dracoLoader.setDecoderPath("/draco/");
+  dracoLoader.setDecoderPath(`${baseUrl}draco/`);
   loader.setDRACOLoader(dracoLoader);
 
   const loadCharacter = () => {
     return new Promise<GLTF | null>(async (resolve, reject) => {
       try {
+        const modelUrl = `${baseUrl}models/character.enc`.replace(/\/+/g, '/');
         const encryptedBlob = await decryptFile(
-          "/models/character.enc",
+          modelUrl,
           "Character3D#@"
         );
         const blobUrl = URL.createObjectURL(new Blob([encryptedBlob]));
@@ -42,8 +44,10 @@ const setCharacter = (
             resolve(gltf);
             setCharTimeline(character, camera);
             setAllTimeline();
-            character!.getObjectByName("footR")!.position.y = 3.36;
-            character!.getObjectByName("footL")!.position.y = 3.36;
+            const footR = character!.getObjectByName("footR");
+            if (footR) footR.position.y = 3.36;
+            const footL = character!.getObjectByName("footL");
+            if (footL) footL.position.y = 3.36;
             dracoLoader.dispose();
           },
           undefined,
@@ -53,8 +57,8 @@ const setCharacter = (
           }
         );
       } catch (err) {
+        console.error("Error in decrypting character file:", err);
         reject(err);
-        console.error(err);
       }
     });
   };

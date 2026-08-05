@@ -9,6 +9,10 @@ const CallToAction = () => {
         <Link to="/myworks" className="cta-btn cta-btn-play" data-cursor="disable">
           Explore Works →
         </Link>
+
+        <Link to="/play" className="cta-btn cta-btn-play" data-cursor="disable">
+          AI Chat & Chess →
+        </Link>
         
         <a 
           href={`mailto:${config.contact.email}`}

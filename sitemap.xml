@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://mr-kishore.github.io/</loc></url>
-  <url><loc>https://mr-kishore.github.io/blog/</loc></url>
-  <url><loc>https://mr-kishore.github.io/publications/</loc></url>
-  <url><loc>https://mr-kishore.github.io/blog/vibe-code/</loc></url>
-  <url><loc>https://mr-kishore.github.io/projects/creations/project-v/</loc></url>
-  <url><loc>https://mr-kishore.github.io/projects/contributions/gurukulams/</loc></url>
-  <url><loc>https://mr-kishore.github.io/publications/alldaydevops/</loc></url>
+  <url><loc>https://mr-kishore.vercel.app/</loc></url>
+  <url><loc>https://mr-kishore.vercel.app/blog/</loc></url>
+  <url><loc>https://mr-kishore.vercel.app/publications/</loc></url>
+  <url><loc>https://mr-kishore.vercel.app/blog/vibe-code/</loc></url>
+  <url><loc>https://mr-kishore.vercel.app/projects/creations/project-v/</loc></url>
+  <url><loc>https://mr-kishore.vercel.app/projects/contributions/gurukulams/</loc></url>
+  <url><loc>https://mr-kishore.vercel.app/publications/alldaydevops/</loc></url>
 </urlset>

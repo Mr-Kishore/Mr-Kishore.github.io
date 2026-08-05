@@ -1,8 +1,7 @@
 import {
   FaGithub,
-  FaInstagram,
   FaLinkedinIn,
-  FaXTwitter,
+  FaMedium,
 } from "react-icons/fa6";
 import "./styles/SocialIcons.css";
 import { TbNotes } from "react-icons/tb";
@@ -13,6 +12,7 @@ import { config } from "../config";
 const SocialIcons = () => {
   useEffect(() => {
     const social = document.getElementById("social") as HTMLElement;
+    if (!social) return;
 
     social.querySelectorAll("span").forEach((item) => {
       const elem = item as HTMLElement;
@@ -28,8 +28,10 @@ const SocialIcons = () => {
         currentX += (mouseX - currentX) * 0.1;
         currentY += (mouseY - currentY) * 0.1;
 
-        link.style.setProperty("--siLeft", `${currentX}px`);
-        link.style.setProperty("--siTop", `${currentY}px`);
+        if (link) {
+          link.style.setProperty("--siLeft", `${currentX}px`);
+          link.style.setProperty("--siTop", `${currentY}px`);
+        }
 
         requestAnimationFrame(updatePosition);
       };
@@ -61,27 +63,22 @@ const SocialIcons = () => {
     <div className="icons-section">
       <div className="social-icons" data-cursor="icons" id="social">
         <span>
-          <a href={config.contact.github} target="_blank" rel="noopener noreferrer">
+          <a href={config.social.github} target="_blank" rel="noopener noreferrer">
             <FaGithub />
           </a>
         </span>
         <span>
-          <a href={config.contact.linkedin} target="_blank" rel="noopener noreferrer">
+          <a href={config.social.linkedin} target="_blank" rel="noopener noreferrer">
             <FaLinkedinIn />
           </a>
         </span>
         <span>
-          <a href={config.contact.twitter} target="_blank" rel="noopener noreferrer">
-            <FaXTwitter />
-          </a>
-        </span>
-        <span>
-          <a href={config.contact.instagram} target="_blank" rel="noopener noreferrer">
-            <FaInstagram />
+          <a href={config.social.medium} target="_blank" rel="noopener noreferrer">
+            <FaMedium />
           </a>
         </span>
       </div>
-      <a className="resume-button" href="#">
+      <a className="resume-button" href={config.social.resume} target="_blank" rel="noopener noreferrer">
         <HoverLinks text="RESUME" />
         <span>
           <TbNotes />

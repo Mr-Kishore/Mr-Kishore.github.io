@@ -3,8 +3,10 @@ import react from "@vitejs/plugin-react";
 
 // https://vitejs.dev/config/
 export default defineConfig({
+  base: "/",
   plugins: [react()],
   build: {
+    outDir: "dist",
     rollupOptions: {
       output: {
         manualChunks: {
@@ -15,14 +17,7 @@ export default defineConfig({
         }
       }
     },
-    chunkSizeWarningLimit: 1000,
-    minify: 'terser',
-    terserOptions: {
-      compress: {
-        drop_console: true,
-        drop_debugger: true
-      }
-    }
+    chunkSizeWarningLimit: 1000
   },
   optimizeDeps: {
     include: ['three', 'gsap', 'lenis']

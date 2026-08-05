@@ -12,12 +12,20 @@ const MyWorks = () => {
         <h1>
           All <span>Works</span>
         </h1>
-        <p>A collection of all my projects and creations</p>
+        <p>A collection of all my projects, creations, and publications</p>
       </div>
 
       <div className="myworks-grid">
         {config.projects.map((project, index) => (
-          <div className="myworks-card" key={project.id} data-cursor="disable">
+          <a
+            href={project.github}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="myworks-card"
+            key={project.id}
+            data-cursor="disable"
+            style={{ textDecoration: 'none', color: 'inherit' }}
+          >
             <div className="myworks-card-number">0{index + 1}</div>
             <div className="myworks-card-image">
               <img src={project.image} alt={project.title} />
@@ -28,7 +36,7 @@ const MyWorks = () => {
               <p className="myworks-card-description">{project.description}</p>
               <p className="myworks-card-tech">{project.technologies}</p>
             </div>
-          </div>
+          </a>
         ))}
       </div>
     </div>

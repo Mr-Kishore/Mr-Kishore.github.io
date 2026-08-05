@@ -1,0 +1,263 @@
+{
+  "developer": {
+    "name": "Kishore",
+    "fullName": "Kishore G",
+    "title": "Gen-AI dev",
+    "description": "Student by day, dev by night, Python instructor whenever someone's desperate enough. Also a Gen-AI intern, running way too many things at once, on a diet of caffeine and questionable life choices. Currently pursuing a Master's — because..... why not??"
+  },
+  "social": {
+    "github": "https://github.com/Mr-Kishore",
+    "linkedin": "https://linkedin.com/in/kishoreee",
+    "medium": "https://medium.com/@kishoretheblogger",
+    "email": "kishoreprogramminghub@gmail.com",
+    "location": "Coimbatore, India",
+    "resume": "/resume.pdf"
+  },
+  "about": {
+    "title": "Who am I?",
+    "description": "I build things that work — AI agents, backend systems, full-stack apps, Python tools. Gen-AI dev @ Aloshanai. Running on too many tasks and cool-guy energy. Still figuring out the rest."
+  },
+  "education": [
+    {
+      "school": "Sri Ramakrishna Mission Vidyalaya College of Arts and Science",
+      "degree": "Bachelor of Science",
+      "major": "Information Technology",
+      "range": "2023 - 2026"
+    },
+    {
+      "school": "Sri Krishna Arts and Science College",
+      "degree": "Master of Science",
+      "major": "Computer Technology",
+      "range": "Doing it....."
+    }
+  ],
+  "certifications": [
+    {
+      "name": "Loading",
+      "description": "yet to be complted, not gonna fake certis",
+      "badge": "",
+      "proof": "I'll be there"
+    }
+  ],
+  "experiences": [
+    {
+      "position": "SDE (Software Development Engineer)",
+      "company": "Aloshanai",
+      "period": "May 2026 - Present",
+      "location": "Coimbatore, India",
+      "description": "Building, collaborating on, and managing large-scale client projects with a focus on efficiency, clarity, and scalable solutions.",
+      "responsibilities": [
+        "Architecting scalable backend services and database schemas",
+        "Collaborating with cross-functional engineering teams on client deliverables",
+        "Ensuring codebase quality, clarity, and maintainable software patterns",
+        "Managing full project lifecycles from technical design to deployment"
+      ],
+      "technologies": [
+        "Python",
+        "Java",
+        "JavaScript",
+        "Backend Architecture",
+        "Client Projects"
+      ]
+    },
+    {
+      "position": "Backend Developer Lead",
+      "company": "InsightOH",
+      "period": "September 2025 - May 2026",
+      "location": "Coimbatore, India",
+      "description": "Practicing and building core backend products from scratch, establishing API contracts, database schemas, and microservice infrastructure at InsightOH software design studio.",
+      "responsibilities": [
+        "Leading backend development for core product offerings from scratch",
+        "Designing RESTful APIs and relational database schemas",
+        "Establishing backend development best practices and code standards",
+        "Mentoring junior developers and conducting architectural code reviews"
+      ],
+      "technologies": [
+        "Node.js",
+        "Python",
+        "API Architecture",
+        "Database Design",
+        "PostgreSQL"
+      ]
+    },
+    {
+      "position": "Site Reliability Engineer (SRE) Intern",
+      "company": "Ventragate Technologies",
+      "period": "June 2025 - September 2025",
+      "location": "Coimbatore, India",
+      "description": "Practiced as an SRE & DevOps Intern, configuring CI/CD pipelines, container orchestration, monitoring, and infrastructure reliability.",
+      "responsibilities": [
+        "Configuring automated CI/CD deployment pipelines using GitOps",
+        "Containerizing microservices with Docker for staging and production",
+        "Managing Linux server setups, networking, and system diagnostics",
+        "Monitoring system uptime and troubleshooting infrastructure bottlenecks"
+      ],
+      "technologies": [
+        "Docker",
+        "GitOps",
+        "CI/CD",
+        "Linux",
+        "AWS"
+      ]
+    },
+    {
+      "position": "AI Intern",
+      "company": "uSIS Technologies",
+      "period": "March 2025 - June 2025",
+      "location": "Coimbatore, India",
+      "description": "Worked as an AI intern developing machine learning models and evaluating LLM integrations for intelligent data processing.",
+      "responsibilities": [
+        "Developing machine learning models with Python and TensorFlow",
+        "Preprocessing data pipelines and training NLP evaluation benchmarks",
+        "Evaluating LLM API integrations for automated content processing",
+        "Testing model accuracy and optimizing inference latency"
+      ],
+      "technologies": [
+        "Python",
+        "TensorFlow",
+        "PyTorch",
+        "NLP",
+        "Machine Learning"
+      ]
+    },
+    {
+      "position": "PC Hardware Intern",
+      "company": "Computer Instruments",
+      "period": "January 2025 - January 2026",
+      "location": "Coimbatore, India",
+      "description": "Troubleshooting PC systems, hardware assembly, diagnostics, and field hardware maintenance.",
+      "responsibilities": [
+        "Assembling and diagnosing custom PC hardware builds",
+        "Troubleshooting component failures and motherboard diagnostics",
+        "Field maintenance and technical hardware support for client systems",
+        "Inspecting hardware compatibility and system power configurations"
+      ],
+      "technologies": [
+        "PC Hardware",
+        "Diagnostics",
+        "System Assembly",
+        "Troubleshooting"
+      ]
+    },
+    {
+      "position": "Junior IT Admin",
+      "company": "Sri Ramakrishna Mission Vidyalaya College of Arts and Science",
+      "period": "July 2024 - December 2025",
+      "location": "Coimbatore, India",
+      "description": "PC troubleshooting, lab technician support, network configuration handling, and system setup.",
+      "responsibilities": [
+        "Managing computer laboratory networks and IP address routing",
+        "Troubleshooting OS errors, network drops, and lab hardware setups",
+        "Assisting faculty and lab technicians with system administration",
+        "Maintaining lab security guidelines and software installations"
+      ],
+      "technologies": [
+        "Networking",
+        "System Admin",
+        "IT Infrastructure",
+        "Troubleshooting"
+      ]
+    },
+    {
+      "position": "IoT Intern",
+      "company": "Twirl Tact Technologies LTD",
+      "period": "December 2023 - January 2024",
+      "location": "Coimbatore, India",
+      "description": "Worked with IoT professionals in sensor integration and Internet of Things embedded devices.",
+      "responsibilities": [
+        "Integrating microcontrollers with environmental sensors",
+        "Writing embedded C/Python scripts for sensor telemetry data",
+        "Testing wireless connectivity protocols for IoT devices",
+        "Documenting circuit schematics and hardware setups"
+      ],
+      "technologies": [
+        "IoT",
+        "Embedded Systems",
+        "Sensors",
+        "Python"
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "id": 1,
+      "title": "Voice Assisted Student Data Management",
+      "category": "Machine Learning / Voice App",
+      "technologies": "Python, SpeechRecognition, pyttsx3, FuzzyWuzzy, CSV",
+      "image": "https://raw.githubusercontent.com/Mr-Kishore/Project_V/main/banner.png",
+      "description": "A Python console application that simplifies student, staff, academic, and transport record management via push-to-talk voice commands and fuzzy matching.",
+      "github": "https://github.com/Mr-Kishore/Project_V"
+    },
+    {
+      "id": 2,
+      "title": "Gurukulams Open Source",
+      "category": "Open Source / Education",
+      "technologies": "Markdown, KaTeX, GitOps, Micro-Frontend, Hugo",
+      "image": "https://raw.githubusercontent.com/gurukulams/gurukulam/main/logo.png",
+      "description": "An open-source initiative dedicated to transforming physical textbooks into interactive digital e-books for school and college students.",
+      "github": "https://github.com/gurukulams/gurukulam"
+    },
+    {
+      "id": 3,
+      "title": "Vibe Coding",
+      "category": "Article / DevTools",
+      "technologies": "AI, Natural Language, LLMs, Developer Tools",
+      "image": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&w=800&q=80",
+      "description": "An article discussing Andrej Karpathy's Vibe Coding paradigm shift — guiding AI models with natural language prompts rather than line-by-line coding.",
+      "github": "https://medium.com/@kishoretheblogger"
+    },
+    {
+      "id": 4,
+      "title": "Organically DevOps",
+      "category": "Talk / DevSecOps",
+      "technologies": "DevOps, CI/CD, Supply Chain Security, Agile",
+      "image": "https://images.unsplash.com/photo-1556075798-4825dfaaf498?auto=format&fit=crop&w=800&q=80",
+      "description": "A talk exploring continuous delivery, supply chain security, and cultural transformations in regulated software environments.",
+      "github": "http://www.alldaydevops.com/blog/organically-devops-building-quality-and-security-into-the-software-supply-chain-at-liberty-mutual"
+    }
+  ],
+  "contact": {
+    "email": "kishoreprogramminghub@gmail.com",
+    "github": "https://github.com/Mr-Kishore",
+    "linkedin": "https://linkedin.com/in/kishoreee",
+    "medium": "https://medium.com/@kishoretheblogger",
+    "location": "Coimbatore, India",
+    "resume": "/resume.pdf"
+  },
+  "skills": {
+    "develop": {
+      "title": "BACKEND & SYSTEM DEV",
+      "description": "Building scalable backend & API infrastructure",
+      "details": "Architecting backend systems, microservices, and database models using Python, Java, JavaScript, PostgreSQL, and Docker. Experienced in building production software from scratch.",
+      "tools": [
+        "Python",
+        "Java",
+        "JavaScript",
+        "HTML5",
+        "CSS3",
+        "C#",
+        "PostgreSQL",
+        "Ruby",
+        "Django",
+        "Flask"
+      ]
+    },
+    "design": {
+      "title": "DEVOPS & TOOLS",
+      "description": "CI/CD pipelines, containerization & cloud infrastructure",
+      "details": "Managing deployment pipelines, Docker containerization, GitOps workflows, AWS cloud services, and Linux infrastructure for high reliability.",
+      "tools": [
+        "Git",
+        "Linux",
+        "Docker",
+        "AWS",
+        "MySQL",
+        "VS Code",
+        "Jupyter",
+        "TensorFlow",
+        "PyTorch",
+        "REST APIs"
+      ]
+    }
+  }
+}
